@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { BrainCircuit, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -75,7 +76,13 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10">
-              <BrainCircuit className="h-5 w-5 text-blue-400" />
+              <Image
+                src="/logo.png"
+                alt="UnplugIQ Logo"
+                width={32}
+                height={32}
+                className="h-6 w-6 object-fill"
+              />
             </div>
 
             <div>
