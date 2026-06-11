@@ -138,11 +138,14 @@ export default function Navbar() {
 
           {/* Desktop Actions */}
           <div className="hidden items-center gap-3 md:flex">
-            <Button variant="ghost" className="text-slate-300 hover:text-white">
+            <Button
+              variant="ghost"
+              className="rounded-xl  bg-blue-500 text-slate-50 hover:text-slate-950 font-extrabold hover:bg-white hover:shadow-lg"
+            >
               Login
             </Button>
 
-            <Button className="rounded-xl bg-blue-500 px-6 text-white hover:bg-blue-600">
+            <Button className="rounded-xl bg-blue-500 px-6 text-white hover:bg-white font-extrabold hover:text-slate-950 hover:shadow-lg">
               Get Started
             </Button>
           </div>
